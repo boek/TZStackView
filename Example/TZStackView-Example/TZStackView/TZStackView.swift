@@ -161,6 +161,8 @@ public class TZStackView: UIView {
     }
 
     public func insertArrangedSubview(view: UIView, atIndex stackIndex: Int) {
+        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        addSubview(view)
         arrangedSubviews.insert(view, atIndex: stackIndex)
     }
 
